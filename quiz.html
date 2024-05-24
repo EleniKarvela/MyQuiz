@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>My Quiz</h1>
+    <div id="quiz-container">
+        <div class="question-container active" id="question-1">
+            <h3>What is the capital of France?</h3>
+            <button class="answer" data-correct="true">Paris</button>
+            <button class="answer" data-correct="false">Madrid </button>
+            <button class="answer" data-correct="false">Berlin </button>
+            <button class="answer" data-correct="false">Rome</button>
+            <input class="btn next-btn" type="button" value="Next">
+        </div>
+        <div class="question-container" id="question-2">
+            <h3>Which element has the chemical symbol 'O'?</h3>
+            <button class="answer" data-correct="false">Gold</button>
+            <button class="answer" data-correct="false"> Silver</button>
+            <button class="answer" data-correct="true"> Oxygen </button>
+            <button class="answer" data-correct="false">Hydrogen</button>
+            <input class="btn next-btn" type="button" value="Next">
+        </div>
+        <div class="question-container" id="question-3">
+            <h3>Who wrote "Romeo and Juliet"?</h3>
+            <button class="answer" data-correct="false">Charles Dickens </button>
+            <button class="answer" data-correct="true"> William Shakespeare</button>
+            <button class="answer" data-correct="false"> Jane Austen </button>
+            <button class="answer" data-correct="false">Ernest Hemingway</button>
+            <input class="btn next-btn" type="button" value="Next">
+        </div>
+        <div class="question-container" id="results" style="display: none;">
+            <h3>Results</h3>
+            <p id="score"></p>
+            <input class="btn restart-btn" type="button" value="Restart">
+
+
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
